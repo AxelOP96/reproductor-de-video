@@ -8,13 +8,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hola mundo</h1>
-    <video src="./videos/lofi.mp4" width=400 autoplay muted controls></video> 
-    <button class="button" id="backward"></button>
-    <button class="button" id="forward"></button>
-    <button class="button" id="play">play</button>
-    <button class="button" id="pause">pause</button>
-    <button>avanzar 10 segundos</button>
+    <div class="wrapper">
+        <div class="player">
+            <video id="video" poster="images/poster.jpg" src="./videos/lofi.mp4" width="400" muted controls></video> 
+            <div class="player-overlay">
+                <h2 class="player-title"> Musica para programar</h2>
+                <div class="player-actions">
+
+                    <button class="button" id="backward" aria-label="retroceder 10 segundos" title="retroceder 10 segundos"></button>
+                    <button class="button" id="play" aria-label="reproducir" title="play"></button>
+                    <button class="button" hidden id="pause" aria-label="pausar" title="pausa"></button>
+                    <button class="button" id="forward" aria-label="adelante 10 segundos" title="adelantar 10 segundos"></button>
+                </div>
+                
+                <div class="player-progress">
+                    <input type="range" min="0" value="0" step="1">
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    
 
     <script src="app.js"></script>
 </body>

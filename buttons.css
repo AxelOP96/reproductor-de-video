@@ -7,9 +7,11 @@
     background-position: center;
     cursor: pointer;
 }
+.button:active {
+    transform: scale(.9);
+}
 #play {
     background-image: url('./images/play.svg');
-    border: 10px solid rgb(9, 9, 63)8, 8, 51)
 }
 #pause {
     background-image: url('./images/pause.svg');
