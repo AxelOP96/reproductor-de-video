@@ -11,14 +11,14 @@
     transform: scale(.9);
 }
 #play {
-    background-image: url('./images/play.svg');
+    background-image: url('../images/play.svg');
 }
 #pause {
-    background-image: url('./images/pause.svg');
+    background-image: url('../images/pause.svg');
 }
 #backward {
-    background-image: url('./images/backward.svg');
+    background-image: url('../images/backward.svg');
 }
 #forward {
-    background-image: url('./images/forward.svg');
+    background-image: url('../images/forward.svg');
 }
